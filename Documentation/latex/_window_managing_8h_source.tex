@@ -1,0 +1,75 @@
+\hypertarget{_window_managing_8h_source}{}\doxysection{Window\+Managing.\+h}
+\label{_window_managing_8h_source}\index{Client/Includes/WindowManaging.h@{Client/Includes/WindowManaging.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Gabriel de Taxis on 27/09/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef B\_CPP\_500\_MAR\_5\_1\_RTYPE\_GABRIEL\_DE\_TAXIS\_DU\_POET\_WINDOWMANAGING\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define B\_CPP\_500\_MAR\_5\_1\_RTYPE\_GABRIEL\_DE\_TAXIS\_DU\_POET\_WINDOWMANAGING\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <SFML/System.hpp>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <SFML/Window.hpp>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <SFML/Audio.hpp>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <SFML/Network.hpp>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}PlayerControlSystem.hpp"{}}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_window_managing}{WindowManaging}} \{}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22    }
+\DoxyCodeLine{23     \mbox{\hyperlink{class_window_managing}{WindowManaging}}();}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_window_managing}{\string~WindowManaging}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} initWindow(std::string \textcolor{keyword}{const}\& windowTitle, \textcolor{keywordtype}{int} windowWidth, \textcolor{keywordtype}{int} windowHeight);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool} isRunning();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{bool} pollEvent();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} doingAllTheTests();}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} gameBackground();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     sf::RenderWindow \_window;}
+\DoxyCodeLine{33     \textcolor{comment}{// bool \_Z;}}
+\DoxyCodeLine{34     \textcolor{comment}{// bool \_Q;}}
+\DoxyCodeLine{35     \textcolor{comment}{// bool \_S;}}
+\DoxyCodeLine{36     \textcolor{comment}{// bool \_D;}}
+\DoxyCodeLine{37     \textcolor{keywordtype}{bool} \_mouseClick;}
+\DoxyCodeLine{38     sf::Vector2i \_mousePos;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} Update();}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_bullet}{Bullet}} initBulletShape(\mbox{\hyperlink{struct_position}{Position}});}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} UpdateBullet(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} finishBullet(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} bulletManager();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{int} UpdateUltiBullet(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{49     \textcolor{comment}{// void finishUltiBullet(int);}}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} UltiBulletManager();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \mbox{\hyperlink{class_player}{Player}} *\_player;}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_monster}{Monster}} *\_monster;}
+\DoxyCodeLine{54     \mbox{\hyperlink{struct_position}{Position}} \_pos;}
+\DoxyCodeLine{55     std::bitset<8> mButtons;}
+\DoxyCodeLine{56     \textcolor{keywordtype}{bool} \_action;}
+\DoxyCodeLine{57     Direction \_direction;}
+\DoxyCodeLine{58     sf::CircleShape \_shape;}
+\DoxyCodeLine{59     std::vector<Bullet*> \_tabOfBullet;}
+\DoxyCodeLine{60     std::vector<UltimateBullets*> \_TabOfUltimateBullets;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{int} \_level;}
+\DoxyCodeLine{63     sf::Clock Clock;}
+\DoxyCodeLine{64 \textcolor{keyword}{private}:}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//B\_CPP\_500\_MAR\_5\_1\_RTYPE\_GABRIEL\_DE\_TAXIS\_DU\_POET\_WINDOWMANAGING\_H}}
+
+\end{DoxyCode}

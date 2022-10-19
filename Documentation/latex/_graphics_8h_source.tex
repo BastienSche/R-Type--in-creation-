@@ -1,0 +1,70 @@
+\hypertarget{_graphics_8h_source}{}\doxysection{Graphics.\+h}
+\label{_graphics_8h_source}\index{Client/Includes/Graphics.h@{Client/Includes/Graphics.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// \#include "{}Assets.h"{}}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Menu.h"{}}}
+\DoxyCodeLine{3 \textcolor{comment}{// \#include "{}WindowManaging.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define SCROLL\_RATE\_BG\_1 1;}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define SCROLL\_RATE\_BG\_2 2;}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define SCROLL\_RATE\_BG\_3 3;}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_graphics}{Graphics}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     \textcolor{keyword}{private}:}
+\DoxyCodeLine{14         \textcolor{comment}{// Menu \_menu;}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         \textcolor{keywordtype}{int} \_l\_moveSpeed;}
+\DoxyCodeLine{17         \textcolor{keywordtype}{int} \_v\_moveSpeed;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         sf::Vector2f \_p\_playerShip;}
+\DoxyCodeLine{20         sf::Vector2f \_p\_background\_L1;}
+\DoxyCodeLine{21         sf::Vector2f \_p\_background\_L2;}
+\DoxyCodeLine{22         sf::Vector2f \_p\_background\_L3;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         sf::IntRect \_playerShipRect;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26         sf::Clock \_playerShipClock;}
+\DoxyCodeLine{27         sf::Clock \_backgroundClock\_L1;}
+\DoxyCodeLine{28         sf::Clock \_backgroundClock\_L2;}
+\DoxyCodeLine{29         sf::Clock \_backgroundClock\_L3;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keyword}{public}:}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_assets}{Assets}} \_assets;}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_window_managing}{WindowManaging}} \_windowManager;}
+\DoxyCodeLine{34         sf::Vector2i \_mousePos;}
+\DoxyCodeLine{35         \textcolor{keywordtype}{bool} \_mouseClick;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         \mbox{\hyperlink{class_graphics}{Graphics}}();}
+\DoxyCodeLine{38         \mbox{\hyperlink{class_graphics}{\string~Graphics}}();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphics_a618d4c3e1e5975211e1635e9ef51b6db}{initGraphics}}();}
+\DoxyCodeLine{41         \textcolor{keywordtype}{void} initPlayerShip();}
+\DoxyCodeLine{42         \textcolor{keywordtype}{void} initBackground();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphics_a60792643bcd1baee45009d38f952e80b}{draw}}(sf::Sprite sprite);}
+\DoxyCodeLine{45         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphics_a5006edbbdc540af376d4787f9d56fbdd}{clear}}();}
+\DoxyCodeLine{46         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphics_a2eb54e5d252dc77f3311073faf741e0f}{display}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         \textcolor{comment}{//Player Methods}}
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} drawPlayer();}
+\DoxyCodeLine{50         \textcolor{keywordtype}{void} playerSetPos();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52         \textcolor{keywordtype}{void} playerRight();}
+\DoxyCodeLine{53         \textcolor{keywordtype}{void} playerLeft();}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void} playerUp();}
+\DoxyCodeLine{55         \textcolor{keywordtype}{void} playerDown();}
+\DoxyCodeLine{56         \textcolor{keywordtype}{void} playerImmobile();}
+\DoxyCodeLine{57         }
+\DoxyCodeLine{58         \textcolor{keywordtype}{void} playerHit();}
+\DoxyCodeLine{59         \textcolor{keywordtype}{void} playerFire();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61         \textcolor{comment}{//Background Methods}}
+\DoxyCodeLine{62         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphics_ac6fbc36a5c9bb5ff797fb835bf0202a5}{drawBackground}}();}
+\DoxyCodeLine{63         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphics_ab33d2065a0ffd71f66a510e51bdc4e99}{backgroundSetPos}}();}
+\DoxyCodeLine{64 \};}
+
+\end{DoxyCode}

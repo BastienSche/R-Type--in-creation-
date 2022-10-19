@@ -1,0 +1,92 @@
+\hypertarget{class_monster}{}\doxysection{Monster Class Reference}
+\label{class_monster}\index{Monster@{Monster}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_monster_ab5ad6bcc484c776fb2c01a0d8378e4b4}\label{class_monster_ab5ad6bcc484c776fb2c01a0d8378e4b4}} 
+{\bfseries Monster} (int)
+\item 
+\mbox{\Hypertarget{class_monster_acf60750c8b14dd010cbbe8aa9532604b}\label{class_monster_acf60750c8b14dd010cbbe8aa9532604b}} 
+void {\bfseries Handle\+Monster} ()
+\item 
+\mbox{\Hypertarget{class_monster_ac270f47e842943007d44e9c27ce4d1c2}\label{class_monster_ac270f47e842943007d44e9c27ce4d1c2}} 
+void {\bfseries Wave\+Lunch} (int, int)
+\item 
+\mbox{\Hypertarget{class_monster_a4275b21e5bfb42172f9a6c37d91a4233}\label{class_monster_a4275b21e5bfb42172f9a6c37d91a4233}} 
+void {\bfseries Update\+Monster} ()
+\item 
+\mbox{\Hypertarget{class_monster_a76221cceb12942f4a5501290206f5eb7}\label{class_monster_a76221cceb12942f4a5501290206f5eb7}} 
+int {\bfseries Setup\+Rand} (int, int)
+\item 
+\mbox{\Hypertarget{class_monster_aa7df6fecc83a8cce150adb2c8a4d0b5e}\label{class_monster_aa7df6fecc83a8cce150adb2c8a4d0b5e}} 
+std\+::vector$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ $>$ {\bfseries Check\+Collision} (std\+::vector$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ $>$)
+\item 
+\mbox{\Hypertarget{class_monster_a9d8dadff917f12598b0fd571eeee9b22}\label{class_monster_a9d8dadff917f12598b0fd571eeee9b22}} 
+bool {\bfseries collision\+Of\+Bullets} (\mbox{\hyperlink{class_bullet}{Bullet}} $\ast$, int, Type\+Of\+Bullet)
+\item 
+\mbox{\Hypertarget{class_monster_ac3259ccb48ab6273b01ee8c8cb75079c}\label{class_monster_ac3259ccb48ab6273b01ee8c8cb75079c}} 
+void {\bfseries Finish\+Mob1} (int)
+\item 
+\mbox{\Hypertarget{class_monster_ad8d4b081052dd8cc4876ccfa3c903605}\label{class_monster_ad8d4b081052dd8cc4876ccfa3c903605}} 
+void {\bfseries Finish\+Boss1} (int)
+\item 
+\mbox{\Hypertarget{class_monster_a4b1a0ffe8a626c97323f0d94f1d770fb}\label{class_monster_a4b1a0ffe8a626c97323f0d94f1d770fb}} 
+void {\bfseries Finish\+Bullet} (int, Type\+Of\+Bullet)
+\item 
+\mbox{\Hypertarget{class_monster_a9898c60abdcb14fcc58ec6fac9541e14}\label{class_monster_a9898c60abdcb14fcc58ec6fac9541e14}} 
+int {\bfseries Check\+Status} ()
+\item 
+\mbox{\Hypertarget{class_monster_a869cea55d4304b38cad5111e7a8e1343}\label{class_monster_a869cea55d4304b38cad5111e7a8e1343}} 
+std\+::vector$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ $>$ {\bfseries Check\+Ulti\+Collision} (std\+::vector$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ $>$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_monster_a70f8e4026a64b9a473f21ec95fa50352}\label{class_monster_a70f8e4026a64b9a473f21ec95fa50352}} 
+int {\bfseries \+\_\+level}
+\item 
+\mbox{\Hypertarget{class_monster_a6e53e9f6ec8c3f76f2c0b8e27090ff61}\label{class_monster_a6e53e9f6ec8c3f76f2c0b8e27090ff61}} 
+std\+::vector$<$ \mbox{\hyperlink{class_mob1}{Mob1}} $\ast$ $>$ {\bfseries \+\_\+\+Tab\+Of\+Mob1}
+\item 
+\mbox{\Hypertarget{class_monster_a74a48c464ed169a5be4875623d727042}\label{class_monster_a74a48c464ed169a5be4875623d727042}} 
+std\+::vector$<$ \mbox{\hyperlink{class_boss1}{Boss1}} $\ast$ $>$ {\bfseries \+\_\+\+Tab\+Of\+Boss1}
+\item 
+\mbox{\Hypertarget{class_monster_aedb5471aedeec21b7be0c7c95f445d39}\label{class_monster_aedb5471aedeec21b7be0c7c95f445d39}} 
+bool {\bfseries \+\_\+actif\+Wave}
+\item 
+\mbox{\Hypertarget{class_monster_ab6a8e7d95082e4dfe69d8bb619e22495}\label{class_monster_ab6a8e7d95082e4dfe69d8bb619e22495}} 
+std\+::vector$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ $>$ {\bfseries \+\_\+\+Tab\+Of\+Bullets}
+\item 
+\mbox{\Hypertarget{class_monster_aa57134fef8c70512adbc82524f13123b}\label{class_monster_aa57134fef8c70512adbc82524f13123b}} 
+sf\+::\+Font {\bfseries \+\_\+font}
+\item 
+\mbox{\Hypertarget{class_monster_a35198c932df107d2ac8d49cad93b9b97}\label{class_monster_a35198c932df107d2ac8d49cad93b9b97}} 
+sf\+::\+Text {\bfseries \+\_\+text\+Score}
+\item 
+\mbox{\Hypertarget{class_monster_aaa263bc6c748ed838c372fe847fdbb33}\label{class_monster_aaa263bc6c748ed838c372fe847fdbb33}} 
+sf\+::\+Text {\bfseries \+\_\+text\+Waves}
+\item 
+\mbox{\Hypertarget{class_monster_af98eb137f1bb13b5ebcf18d65bcf24f6}\label{class_monster_af98eb137f1bb13b5ebcf18d65bcf24f6}} 
+sf\+::\+Text {\bfseries \+\_\+text\+Life}
+\item 
+\mbox{\Hypertarget{class_monster_a0df8f07580145b1cbc5e859d8ef31a49}\label{class_monster_a0df8f07580145b1cbc5e859d8ef31a49}} 
+sf\+::\+Text {\bfseries \+\_\+text\+Shoot\+Progress}
+\item 
+\mbox{\Hypertarget{class_monster_ac0a808fb9b47b1dadd696c7879acfccb}\label{class_monster_ac0a808fb9b47b1dadd696c7879acfccb}} 
+int {\bfseries \+\_\+\+Score}
+\item 
+\mbox{\Hypertarget{class_monster_a89d9b8f617af333dd55967d01017ac25}\label{class_monster_a89d9b8f617af333dd55967d01017ac25}} 
+int {\bfseries \+\_\+\+Player\+Life}
+\item 
+\mbox{\Hypertarget{class_monster_ae60dbc597392999dbbf62d2eb810ba02}\label{class_monster_ae60dbc597392999dbbf62d2eb810ba02}} 
+std\+::vector$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ $>$ {\bfseries \+\_\+\+Tab\+Of\+Bullets\+Ulti}
+\item 
+\mbox{\Hypertarget{class_monster_abd0e55aec8c983409349692803bb3da1}\label{class_monster_abd0e55aec8c983409349692803bb3da1}} 
+int {\bfseries \+\_\+\+Ulti\+Shoot\+Progress}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Includes/Monster\+Control\+System.\+hpp\item 
+Client/\+Src/\+Systems/Monster\+Control\+System.\+cpp\end{DoxyCompactItemize}

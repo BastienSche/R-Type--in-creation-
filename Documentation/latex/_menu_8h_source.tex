@@ -1,0 +1,34 @@
+\hypertarget{_menu_8h_source}{}\doxysection{Menu.\+h}
+\label{_menu_8h_source}\index{Client/Includes/Menu.h@{Client/Includes/Menu.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Button.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{keyword}{class }\mbox{\hyperlink{class_menu}{Menu}}}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5     \textcolor{keyword}{private}:}
+\DoxyCodeLine{6         sf::Texture \_t\_menuBackground;}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8         sf::Sprite \_s\_menuBackground;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10         sf::Vector2f \_p\_menuBackground;}
+\DoxyCodeLine{11         }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keyword}{public}:}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_assets}{Assets}} \_assets;}
+\DoxyCodeLine{15         sf::RenderWindow* \_window;}
+\DoxyCodeLine{16         sf::Vector2i \_mousePos;}
+\DoxyCodeLine{17         \textcolor{keywordtype}{bool} \_mouseClick;}
+\DoxyCodeLine{18         enumState \_gameState;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \mbox{\hyperlink{class_menu}{Menu}}();}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_menu}{\string~Menu}}();}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} initMenu(sf::RenderWindow* window, \mbox{\hyperlink{class_assets}{Assets}} assets, sf::Vector2i mousePos, \textcolor{keywordtype}{bool} mouseClick);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         enumState mainMenu();}
+\DoxyCodeLine{25         enumState settingsMenu();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \textcolor{keywordtype}{void} drawMenuBackground();}
+\DoxyCodeLine{28 \};}
+
+\end{DoxyCode}

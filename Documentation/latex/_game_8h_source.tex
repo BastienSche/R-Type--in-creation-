@@ -1,0 +1,46 @@
+\hypertarget{_game_8h_source}{}\doxysection{Game.\+h}
+\label{_game_8h_source}\index{Client/Includes/Game.h@{Client/Includes/Game.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Gabriel de Taxis on 27/09/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef B\_CPP\_500\_MAR\_5\_1\_RTYPE\_GABRIEL\_DE\_TAXIS\_DU\_POET\_GAME\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define B\_CPP\_500\_MAR\_5\_1\_RTYPE\_GABRIEL\_DE\_TAXIS\_DU\_POET\_GAME\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{comment}{// \#include "{}WindowManaging.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Graphics.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{comment}{// enum enumInput \{ Z, Q, S, D, ESC \};}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}} \{}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} Init();}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_aede5f46c8c7bbbaf8459eeec397a11e7}{gameLoop}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a6713eae62071363adf57a2898a654e42}{gameBackground}}();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a866d08c782ad69f00b04b0a7ab371e75}{drawMainMenu}}();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ac20d5c308246bd19a766ab7ad9693ebf}{drawSettingsMenu}}();}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a403245a251031ce03b2d1a1760065810}{getWinSize}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ae53fceba1d9bb2aeeaffb4d636ba90e6}{drawGame}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} doingAllTheTests();}
+\DoxyCodeLine{29 \textcolor{keyword}{private}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_graphics}{Graphics}} \_graphics;}
+\DoxyCodeLine{31     enumState \_gameState;}
+\DoxyCodeLine{32     \textcolor{keywordtype}{float} \_winWidth;}
+\DoxyCodeLine{33     \textcolor{keywordtype}{float} \_winHeight;}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     sf::Clock \_clock;}
+\DoxyCodeLine{36     std::vector<enumInput> \_inputs;}
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//B\_CPP\_500\_MAR\_5\_1\_RTYPE\_GABRIEL\_DE\_TAXIS\_DU\_POET\_GAME\_H}}
+
+\end{DoxyCode}

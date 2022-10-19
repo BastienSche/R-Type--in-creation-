@@ -1,0 +1,64 @@
+\hypertarget{_assets_8h_source}{}\doxysection{Assets.\+h}
+\label{_assets_8h_source}\index{Client/Includes/Assets.h@{Client/Includes/Assets.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <SFML/Audio.hpp>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <bitset>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define WINDOW\_WIDTH 1400}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define WINDOW\_HEIGHT 800}}
+\DoxyCodeLine{14 \textcolor{comment}{// \#include "{}Systems/BulletControlSystem.hpp"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{enum} enumInput \{ Z, Q, S, D, ESC \};}
+\DoxyCodeLine{17 \textcolor{keyword}{enum} Direction\{Top = 0, Right = 1, Bot = 2, Left = 3, Nop = -\/1\};}
+\DoxyCodeLine{18 \textcolor{comment}{// enum Level\{LvL1 = 1, LvL2 = 2, LvL3 = 3, LvL4 = 4, LvL5 = 5\};}}
+\DoxyCodeLine{19 \textcolor{keyword}{enum} BulletDir\{TopRightRight = 0, TopMid = 1, TopRight = 2, BotRightRight = 3, BotMid = 4, BotRight = 5, RRight = 6, Nothing = 7\};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \textcolor{comment}{//    sf::Vector3f pos(int x, int y);}}
+\DoxyCodeLine{24     \textcolor{keywordtype}{float} x;}
+\DoxyCodeLine{25     \textcolor{keywordtype}{float} y;}
+\DoxyCodeLine{26     \textcolor{keywordtype}{float} z;}
+\DoxyCodeLine{27 \};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33 \textcolor{keyword}{class }\mbox{\hyperlink{class_assets}{Assets}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     }
+\DoxyCodeLine{37     }
+\DoxyCodeLine{38 \textcolor{keyword}{public}:}
+\DoxyCodeLine{39     \mbox{\hyperlink{class_assets}{Assets}}();}
+\DoxyCodeLine{40     \mbox{\hyperlink{class_assets}{\string~Assets}}();}
+\DoxyCodeLine{41     }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_assets_aceed2a06de3921932aa01a0cf26d595b}{initAssets}}();}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_assets_a81df990425257b5d37b4f7d6c04389a3}{loadTexture}}();}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_assets_a5060113ff79dc49be89db29175e6ccd6}{loadSprite}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     sf::Texture \_t\_background\_L1;}
+\DoxyCodeLine{47     sf::Texture \_t\_background\_L2;}
+\DoxyCodeLine{48     sf::Texture \_t\_background\_L3;}
+\DoxyCodeLine{49     sf::Texture \_t\_playerShip;}
+\DoxyCodeLine{50     sf::Texture \_t\_bgButton;}
+\DoxyCodeLine{51     sf::Texture \_t\_bgMenu;}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     sf::Sprite \_s\_playerShip;}
+\DoxyCodeLine{54     sf::Sprite \_s\_background\_L1;}
+\DoxyCodeLine{55     sf::Sprite \_s\_background\_L2;}
+\DoxyCodeLine{56     sf::Sprite \_s\_background\_L3;}
+\DoxyCodeLine{57     sf::Sprite \_s\_bgButton;}
+\DoxyCodeLine{58     sf::Sprite \_s\_bgMenu;}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \};}
+
+\end{DoxyCode}

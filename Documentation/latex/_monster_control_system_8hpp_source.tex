@@ -1,0 +1,87 @@
+\hypertarget{_monster_control_system_8hpp_source}{}\doxysection{Monster\+Control\+System.\+hpp}
+\label{_monster_control_system_8hpp_source}\index{Client/Includes/MonsterControlSystem.hpp@{Client/Includes/MonsterControlSystem.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef R\_TYPE\_MonsterControlSystem\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define R\_TYPE\_MonsterControlSystem\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}BulletControlSystem.hpp"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define SPEED\_MOB1 5}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define SPEED\_BOSS1 3}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{enum} TypeOfBullet \{BasiqueBullet = 0, UltiBullet = 1\};}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_mob1}{Mob1}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     \textcolor{keyword}{public}:}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_mob1}{Mob1}}(\mbox{\hyperlink{struct_position}{Position}});}
+\DoxyCodeLine{15         \mbox{\hyperlink{class_mob1}{\string~Mob1}}();}
+\DoxyCodeLine{16         sf::CircleShape \_shapeMob1; \textcolor{comment}{// Shape du mob1}}
+\DoxyCodeLine{17         \mbox{\hyperlink{struct_position}{Position}} \_SpawnPos; \textcolor{comment}{//Pos de depart}}
+\DoxyCodeLine{18         \mbox{\hyperlink{struct_position}{Position}} \_posMob1; \textcolor{comment}{//pos du mob1}}
+\DoxyCodeLine{19         Direction \_dir;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \textcolor{keywordtype}{int} SetupPileOuFace(); \textcolor{comment}{// Setup 1 ou 2}}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} UpdateMob1(); \textcolor{comment}{//Update pos du mob1}}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} setPosition(); \textcolor{comment}{//Set la pos sur la shape}}
+\DoxyCodeLine{24     \textcolor{keyword}{private}:}
+\DoxyCodeLine{25 \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{class }\mbox{\hyperlink{class_boss1}{Boss1}}}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29     \textcolor{keyword}{public}:}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_boss1}{Boss1}}(\mbox{\hyperlink{struct_position}{Position}});}
+\DoxyCodeLine{31         \mbox{\hyperlink{class_boss1}{\string~Boss1}}();}
+\DoxyCodeLine{32         sf::CircleShape \_shapeBoss1; \textcolor{comment}{// Shape du boss1}}
+\DoxyCodeLine{33         \mbox{\hyperlink{struct_position}{Position}} \_SpawnPos; \textcolor{comment}{//Pos de depart}}
+\DoxyCodeLine{34         \mbox{\hyperlink{struct_position}{Position}} \_posBoss1; \textcolor{comment}{//pos du Boss1}}
+\DoxyCodeLine{35         Direction \_dir;}
+\DoxyCodeLine{36         \textcolor{keywordtype}{int} \_life;}
+\DoxyCodeLine{37         }
+\DoxyCodeLine{38         \textcolor{keywordtype}{int} SetupPileOuFace(); \textcolor{comment}{// Setup 1 ou 2}}
+\DoxyCodeLine{39         \textcolor{keywordtype}{void} UpdateBoss1(); \textcolor{comment}{//Update pos du boss1}}
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} setPosition(); \textcolor{comment}{// Set la pos sur la Shape}}
+\DoxyCodeLine{41     \textcolor{keyword}{private}:}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{class }\mbox{\hyperlink{class_monster}{Monster}}}
+\DoxyCodeLine{45 \{}
+\DoxyCodeLine{46 \textcolor{keyword}{public}:}
+\DoxyCodeLine{47     \mbox{\hyperlink{class_monster}{Monster}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{48     \mbox{\hyperlink{class_monster}{\string~Monster}}();}
+\DoxyCodeLine{49     \textcolor{keywordtype}{int} \_level; \textcolor{comment}{//Level en cours}}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} HandleMonster(); \textcolor{comment}{//Gestion de Monstre en fonction du niveau}}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} WaveLunch(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}); \textcolor{comment}{//void WaveLunch(nombre de mob1, nombre de boss2); }}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} UpdateMonster(); \textcolor{comment}{//Update la pos des monstres}}
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} SetupRand(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}); \textcolor{comment}{//Setup la pos Aleatoire Y du monstre}}
+\DoxyCodeLine{54     std::vector<Bullet*> CheckCollision(std::vector<Bullet*>); \textcolor{comment}{// Check Collision manager}}
+\DoxyCodeLine{55     \textcolor{keywordtype}{bool} collisionOfBullets(\mbox{\hyperlink{class_bullet}{Bullet}}*, \textcolor{keywordtype}{int}, TypeOfBullet); \textcolor{comment}{// Check collision Bullet / MONSTRE}}
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} FinishMob1(\textcolor{keywordtype}{int}); \textcolor{comment}{//TUe le mob}}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} FinishBoss1(\textcolor{keywordtype}{int}); \textcolor{comment}{//TUe le boss}}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} FinishBullet(\textcolor{keywordtype}{int}, TypeOfBullet);}
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} CheckStatus();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     std::vector<Bullet*> CheckUltiCollision(std::vector<Bullet*>);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     std::vector<Mob1 *> \_TabOfMob1; \textcolor{comment}{//Vector de Mob1 (tous les mobs actifs)}}
+\DoxyCodeLine{64     std::vector<Boss1 *> \_TabOfBoss1; \textcolor{comment}{//Vector de Boss1 (tous les mobs actifs)}}
+\DoxyCodeLine{65     \textcolor{keywordtype}{bool} \_actifWave; \textcolor{comment}{//Vague en cour ?}}
+\DoxyCodeLine{66     std::vector<Bullet*> \_TabOfBullets;}
+\DoxyCodeLine{67     sf::Font \_font;}
+\DoxyCodeLine{68     sf::Text \_textScore;}
+\DoxyCodeLine{69     sf::Text \_textWaves;}
+\DoxyCodeLine{70     sf::Text \_textLife;}
+\DoxyCodeLine{71     sf::Text \_textShootProgress;}
+\DoxyCodeLine{72     \textcolor{keywordtype}{int} \_Score;}
+\DoxyCodeLine{73     \textcolor{keywordtype}{int} \_PlayerLife;}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     std::vector<Bullet*> \_TabOfBulletsUlti;}
+\DoxyCodeLine{76     \textcolor{keywordtype}{int} \_UltiShootProgress;}
+\DoxyCodeLine{77 \textcolor{keyword}{private}:}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//R\_TYPE\_MonsterControlSystem\_H}}
+
+\end{DoxyCode}

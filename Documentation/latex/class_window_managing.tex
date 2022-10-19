@@ -1,0 +1,92 @@
+\hypertarget{class_window_managing}{}\doxysection{Window\+Managing Class Reference}
+\label{class_window_managing}\index{WindowManaging@{WindowManaging}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_window_managing_a290699abccb0ccfcc19d12ea4b4135ef}\label{class_window_managing_a290699abccb0ccfcc19d12ea4b4135ef}} 
+void {\bfseries init\+Window} (std\+::string const \&window\+Title, int window\+Width, int window\+Height)
+\item 
+\mbox{\Hypertarget{class_window_managing_add54b619c9a8cafcbc2748a507dadb29}\label{class_window_managing_add54b619c9a8cafcbc2748a507dadb29}} 
+bool {\bfseries is\+Running} ()
+\item 
+\mbox{\Hypertarget{class_window_managing_a528ce65791945e696e38d0407bee996c}\label{class_window_managing_a528ce65791945e696e38d0407bee996c}} 
+bool {\bfseries poll\+Event} ()
+\item 
+\mbox{\Hypertarget{class_window_managing_a0dbe19f2026a3465394844c16165a7cf}\label{class_window_managing_a0dbe19f2026a3465394844c16165a7cf}} 
+void {\bfseries doing\+All\+The\+Tests} ()
+\item 
+\mbox{\Hypertarget{class_window_managing_a1fff7bda1451d29f0cbd7437917819d7}\label{class_window_managing_a1fff7bda1451d29f0cbd7437917819d7}} 
+void {\bfseries game\+Background} ()
+\item 
+\mbox{\Hypertarget{class_window_managing_aae787e6b6956ec89b165bfbc1a517988}\label{class_window_managing_aae787e6b6956ec89b165bfbc1a517988}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_window_managing_af612a40c6ce0a227afa8c076912d6b6f}\label{class_window_managing_af612a40c6ce0a227afa8c076912d6b6f}} 
+\mbox{\hyperlink{class_bullet}{Bullet}} {\bfseries init\+Bullet\+Shape} (\mbox{\hyperlink{struct_position}{Position}})
+\item 
+\mbox{\Hypertarget{class_window_managing_ab7db07a9754b72d4cf27882dc437ca81}\label{class_window_managing_ab7db07a9754b72d4cf27882dc437ca81}} 
+int {\bfseries Update\+Bullet} (int)
+\item 
+\mbox{\Hypertarget{class_window_managing_ad56421ddcb83b558f28e20b5aeeb0ce3}\label{class_window_managing_ad56421ddcb83b558f28e20b5aeeb0ce3}} 
+void {\bfseries finish\+Bullet} (int)
+\item 
+\mbox{\Hypertarget{class_window_managing_a48c2034196cae7f6a8bab5817156d152}\label{class_window_managing_a48c2034196cae7f6a8bab5817156d152}} 
+void {\bfseries bullet\+Manager} ()
+\item 
+\mbox{\Hypertarget{class_window_managing_ac418079336bcb5d37747ef5719dca585}\label{class_window_managing_ac418079336bcb5d37747ef5719dca585}} 
+int {\bfseries Update\+Ulti\+Bullet} (int, int)
+\item 
+\mbox{\Hypertarget{class_window_managing_a03d7ac6df2f569c6b9e59db5dab67e40}\label{class_window_managing_a03d7ac6df2f569c6b9e59db5dab67e40}} 
+void {\bfseries Ulti\+Bullet\+Manager} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_window_managing_a2bdfa75ea47728f810960762d11bd2d3}\label{class_window_managing_a2bdfa75ea47728f810960762d11bd2d3}} 
+sf\+::\+Render\+Window {\bfseries \+\_\+window}
+\item 
+\mbox{\Hypertarget{class_window_managing_a77911852caca7bd1fc953a8da129be7f}\label{class_window_managing_a77911852caca7bd1fc953a8da129be7f}} 
+bool {\bfseries \+\_\+mouse\+Click}
+\item 
+\mbox{\Hypertarget{class_window_managing_a2305da113a3eabf2ad8a962f1520fcca}\label{class_window_managing_a2305da113a3eabf2ad8a962f1520fcca}} 
+sf\+::\+Vector2i {\bfseries \+\_\+mouse\+Pos}
+\item 
+\mbox{\Hypertarget{class_window_managing_a3e16fd5bfe5347cb310c146d50cf311f}\label{class_window_managing_a3e16fd5bfe5347cb310c146d50cf311f}} 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ {\bfseries \+\_\+player}
+\item 
+\mbox{\Hypertarget{class_window_managing_a6f5bf0639d6cf225007ad6d58a2973b0}\label{class_window_managing_a6f5bf0639d6cf225007ad6d58a2973b0}} 
+\mbox{\hyperlink{class_monster}{Monster}} $\ast$ {\bfseries \+\_\+monster}
+\item 
+\mbox{\Hypertarget{class_window_managing_a8f7f0aada42b657dc223a27d998c6bee}\label{class_window_managing_a8f7f0aada42b657dc223a27d998c6bee}} 
+\mbox{\hyperlink{struct_position}{Position}} {\bfseries \+\_\+pos}
+\item 
+\mbox{\Hypertarget{class_window_managing_afe7dacf40bdb77b3ca7e3aaf99d0521c}\label{class_window_managing_afe7dacf40bdb77b3ca7e3aaf99d0521c}} 
+std\+::bitset$<$ 8 $>$ {\bfseries m\+Buttons}
+\item 
+\mbox{\Hypertarget{class_window_managing_a32155d21474fe33673b38e0ec21d5627}\label{class_window_managing_a32155d21474fe33673b38e0ec21d5627}} 
+bool {\bfseries \+\_\+action}
+\item 
+\mbox{\Hypertarget{class_window_managing_aa3a3324a65050de134636b3ebca2d9b8}\label{class_window_managing_aa3a3324a65050de134636b3ebca2d9b8}} 
+Direction {\bfseries \+\_\+direction}
+\item 
+\mbox{\Hypertarget{class_window_managing_ae6d35fd80a56d6d5874a0fd8b5921823}\label{class_window_managing_ae6d35fd80a56d6d5874a0fd8b5921823}} 
+sf\+::\+Circle\+Shape {\bfseries \+\_\+shape}
+\item 
+\mbox{\Hypertarget{class_window_managing_a4e2f1dc168177a9ed84006eb115afeeb}\label{class_window_managing_a4e2f1dc168177a9ed84006eb115afeeb}} 
+std\+::vector$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ $>$ {\bfseries \+\_\+tab\+Of\+Bullet}
+\item 
+\mbox{\Hypertarget{class_window_managing_a66b716b48b957b097fd3b83acf65d3d5}\label{class_window_managing_a66b716b48b957b097fd3b83acf65d3d5}} 
+std\+::vector$<$ \mbox{\hyperlink{class_ultimate_bullets}{Ultimate\+Bullets}} $\ast$ $>$ {\bfseries \+\_\+\+Tab\+Of\+Ultimate\+Bullets}
+\item 
+\mbox{\Hypertarget{class_window_managing_a1e4a9618dc5f775685cd04c9985a2d42}\label{class_window_managing_a1e4a9618dc5f775685cd04c9985a2d42}} 
+int {\bfseries \+\_\+level}
+\item 
+\mbox{\Hypertarget{class_window_managing_aa60a963440318c1ec38243c5961a10cc}\label{class_window_managing_aa60a963440318c1ec38243c5961a10cc}} 
+sf\+::\+Clock {\bfseries Clock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client/\+Includes/Window\+Managing.\+h\item 
+Client/\+Src/Window\+Managing.\+cpp\end{DoxyCompactItemize}

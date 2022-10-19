@@ -1,0 +1,30 @@
+Protocole : 
+
+Client :
+
+ENVOIE CLASSIQUE : Commande::Argument1::Argument2
+
+Commande = [Action | Position | Connexion]
+
+Connexion -> Connexion::[nb_client_total]::[n_current_client]
+    // nb_client_total = nombre de client total
+    // n_current_client = numéros du client actuel
+
+Position -> Positon([n_joueur])::[pos_x];[pos_y]
+    // n_joueur = numéros du joueur à affecter 
+    // pos_x = position X à affecter
+    // pos_y = position Y à affecter
+
+Action -> Action([n_joueur])::[type_Action]
+    // n_joueur = numéros du joueur à affecter 
+    // type_action = Type de l'action à affecter(shoot / ulti / die)
+
+
+Exemple : 
+
+Client(1) -> Serveur = Connexion::Ready::2 
+Client(2) -> Serveur = Connexion::Ready::2
+Server -> Client(1) = Connexion::2::1
+Server -> Client(2) = Connexion::2::2
+
+Client() -> Server = Pos(1)::100.00;100.00|Act(2)::Nothing
